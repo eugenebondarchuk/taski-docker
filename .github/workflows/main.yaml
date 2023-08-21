@@ -180,7 +180,7 @@ jobs:
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
         # Параметр script передаёт в action appleboy/ssh-action команды,
         # которые нужно выполнить на сервере,
-        # с которым установлено соединение test
+        # с которым установлено соединение test1
         script: |
           cd taski
           # Выполняет pull образов с Docker Hub
@@ -203,3 +203,4 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: Деплой успешно выполнен!
+
